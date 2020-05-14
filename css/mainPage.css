@@ -2,6 +2,13 @@ body {
     background-color: lavender;
 }
 
+.divBlocks :hover
+{
+    background-color: rgba(255, 166, 0, 0.404);
+    
+    width: 94%;
+    height: 44%;
+}
 
 .divBlocks
 {
@@ -16,5 +23,11 @@ body {
     background-color :rgba(195, 233, 60, 0.466); 
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+section 
+{
+    color: coral;
 }
 
