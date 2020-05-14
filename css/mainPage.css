@@ -1,12 +1,29 @@
-body {
-    background-color: lavender;
+
+
+@media (min-width : 700px){
+    body 
+    {
+        background-color : black;
+    }
 }
+
+
+@media (max-width : 699px){
+    body 
+    {
+        background-color : red;
+    }
+
+}
+
+
+
 
 .divBlocks :hover
 {
     background-color: rgba(255, 166, 0, 0.404);
     
-    width: 94%;
+    width: 70%;
     height: 44%;
 }
 
@@ -15,7 +32,7 @@ body {
     border: 10 solid black;
     
     margin: 5px;
-    width: 95%;
+    width: 75%;
     height: 45%;
     
     Padding: 5px;
@@ -30,4 +47,5 @@ section
 {
     color: coral;
 }
+
 
