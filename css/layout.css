@@ -1,0 +1,75 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 1px;
+}
+
+@media screen and (min-width: 480px) {
+    .gridMasterParent{
+      display : grid;
+      grid-template-columns: 1fr 7fr; 
+      grid-template-rows: 2fr 15fr 1fr 2fr; 
+      grid-template-areas:  
+        "aside header"
+        "aside section"
+        "nav nav"
+        "footer footer";
+    }
+   
+}
+
+
+      
+
+
+
+.gridMasterParent{
+      display : grid;
+      grid-template-columns: 1fr 7fr; 
+      grid-template-rows: 2fr 15fr 1fr 2fr; 
+      grid-template-areas:  
+        "header header"
+        "aside section"
+        "nav nav"
+        "footer footer";
+
+}
+
+.sectionGridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+      
+}
+
+
+
+header {
+    background-color: rgba(175, 238, 238, 0.247);
+    grid-area: header;
+
+} 
+
+aside {
+    background-color: lightgoldenrodyellow;
+    grid-area: aside;
+    
+
+     
+} 
+
+section {
+    background-color: whitesmoke;
+    grid-area: section;  
+}
+
+nav {
+    background-color : rgba(245, 222, 179, 0.24);
+    grid-area: nav;
+} 
+
+
+Footer {
+    background-color: rgba(175, 238, 238, 0.247) ;
+    grid-area: footer;
+}
+
