@@ -2,7 +2,7 @@
     .gridMasterParent{
       display : grid;
       grid-template-columns: 1fr 7fr; 
-      grid-template-rows: 2fr 2fr 7fr 1fr 2fr; 
+      grid-template-rows: 3fr 2fr 7fr 1fr 2fr; 
       grid-template-areas:  
         "header header"
         "aside aside"
@@ -27,6 +27,12 @@
 
 }
 
+.masterHeader{
+    display: grid;
+    grid-template-columns: 1fr 3fr 8fr 1fr 1fr ;
+    text-align: center;
+    background-color: lightyellow;
+}
 
 .sectionGridBox {
     display: grid;
@@ -34,12 +40,16 @@
       
 }
 
+
+
+
+
 *{
     border: 0px;
     padding: 0px;
     margin: 2px;
-    color: whitesmoke;
-    background-color: lightsteelblue;
+    /*color: whitesmoke;
+    background-color: lightsteelblue;*/
 }
 
 
@@ -56,7 +66,8 @@ header {
 
 aside {
     /*background-color: lightgoldenrodyellow;*/
-    grid-area: aside;     
+    grid-area: aside;
+    
 } 
 
 .masterBoxSection {
@@ -77,16 +88,17 @@ nav {
 
 Footer {
     /*background-color: rgba(175, 238, 238, 0.247) ;*/
+    grid-area: footer;
     text-align: center;
     text-justify: auto;
-    grid-area: footer;
+    background-color: lightyellow;
 }
 
 
 .innerbox{
     border: .5px solid rgba(119, 136, 153, 0.158);
     padding :10px;
-    margin: 5px;
+    margin: 7px;
     background-color: rgba(0, 128, 128, 0.032);
     border-radius: 4px;
 }
@@ -103,17 +115,28 @@ Footer {
 
 
 
+
 #menu{
-    text-align: left;
+    text-align: center;
     font-size: 40px;
+    margin: auto;
+}
+
+#logo
+{
+    margin: auto;
+}
+
+#mainheading{
+    margin: auto;
 }
 
 #login{
-    text-align: right;
+    text-align: center;
     margin: auto;
 }
 
 #signup{
-    text-align: right;
+    text-align: center;
     margin: auto;
 }
