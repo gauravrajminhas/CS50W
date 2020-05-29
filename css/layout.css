@@ -1,75 +1,119 @@
-*{
-    border: 0px;
-    padding: 0px;
-    margin: 1px;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
     .gridMasterParent{
       display : grid;
       grid-template-columns: 1fr 7fr; 
-      grid-template-rows: 2fr 15fr 1fr 2fr; 
+      grid-template-rows: 2fr 2fr 7fr 1fr 2fr; 
       grid-template-areas:  
-        "aside header"
-        "aside section"
+        "header header"
+        "aside aside"
+        "boxSection boxSection"
         "nav nav"
+        "MessegeCenter MessegeCenter "
         "footer footer";
     }
    
 }
 
-
-      
-
-
-
 .gridMasterParent{
       display : grid;
       grid-template-columns: 1fr 7fr; 
-      grid-template-rows: 2fr 15fr 1fr 2fr; 
+      grid-template-rows: 2fr 12fr 1fr 2fr 2fr; 
       grid-template-areas:  
         "header header"
-        "aside section"
+        "aside boxSection"
         "nav nav"
-        "footer footer";
+        "MessegeCenter MessegeCenter "
+        "footer footer"; 
 
 }
+
 
 .sectionGridBox {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
       
 }
+
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 2px;
+    color: whitesmoke;
+    background-color: lightsteelblue;
+}
+
+
+
+
 
 
 
 header {
-    background-color: rgba(175, 238, 238, 0.247);
+    
     grid-area: header;
 
 } 
 
 aside {
-    background-color: lightgoldenrodyellow;
-    grid-area: aside;
-    
-
-     
+    /*background-color: lightgoldenrodyellow;*/
+    grid-area: aside;     
 } 
 
-section {
-    background-color: whitesmoke;
-    grid-area: section;  
+.masterBoxSection {
+    /*background-color: whitesmoke;*/
+    grid-area: boxSection;  
+}
+
+.masterMessegeCenter{
+    /*background-color: whitesmoke;*/
+    grid-area: MessegeCenter;  
 }
 
 nav {
-    background-color : rgba(245, 222, 179, 0.24);
+    /*background-color : rgba(245, 222, 179, 0.24);*/
     grid-area: nav;
 } 
 
 
 Footer {
-    background-color: rgba(175, 238, 238, 0.247) ;
+    /*background-color: rgba(175, 238, 238, 0.247) ;*/
+    text-align: center;
+    text-justify: auto;
     grid-area: footer;
 }
 
+
+.innerbox{
+    border: .5px solid rgba(119, 136, 153, 0.158);
+    padding :10px;
+    margin: 5px;
+    background-color: rgba(0, 128, 128, 0.032);
+    border-radius: 4px;
+}
+
+.innerbox:hover {
+    background-color: rgba(0, 128, 128, 0.06);
+    border-radius: 25px;
+}
+
+
+.masterNav{
+    text-align: center;
+}
+
+
+
+#menu{
+    text-align: left;
+    font-size: 40px;
+}
+
+#login{
+    text-align: right;
+    margin: auto;
+}
+
+#signup{
+    text-align: right;
+    margin: auto;
+}
