@@ -1,18 +1,75 @@
-@media screen and (min-width: 420px) {
-    .gridMasterParent{
-      display : grid;
-      grid-template-columns: 1fr 7fr; 
-      grid-template-rows: 3fr 2fr 7fr 1fr 2fr; 
-      grid-template-areas:  
-        "header header"
-        "aside aside"
-        "boxSection boxSection"
-        "nav nav"
-        "MessegeCenter MessegeCenter "
-        "footer footer";
-    }
-   
+
+/* -------------------------------------------- Mobile Layout  -----------------------------------------------------*/
+
+@media screen and (max-width: 499px)
+{
+    *{
+    border: 0px;
+    padding: 0px;
+    margin: 2px;
+    color: whitesmoke;
+    background-color: lightsteelblue;
 }
+
+ 
+
+
+    /*  Grid section for Mobile layout */
+    .gridMasterParent{
+        display : grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: 2fr 1fr 7fr 1fr 2fr 2fr ; 
+        grid-template-areas:  
+            "header"
+            "aside"
+            "boxSection"
+            "nav"
+            "MessegeCenter"
+            "footer"
+            ; 
+
+    }
+
+    .masterAside{
+        visibility: hidden;
+    }
+
+    .masterHeader{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 1fr ;
+        text-align: center;
+        background-color: lightyellow;
+    }
+
+
+    /*Grids for the center section layout 
+    Should change with media queries 
+    */
+    .sectionGridBox {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+
+
+
+
+}
+
+/* -------------------------------------------- Web Page Layout -----------------------------------------------------*/
+
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 2px;
+    /*color: whitesmoke;
+    background-color: lightsteelblue;*/
+}
+
+/*Grids for the main page layout 
+shoudld change with media queries
+*/
 
 .gridMasterParent{
       display : grid;
@@ -27,12 +84,21 @@
 
 }
 
+/* Grids for the header Layout  
+should change with media queries
+*/
+
 .masterHeader{
     display: grid;
     grid-template-columns: 1fr 3fr 8fr 1fr 1fr ;
     text-align: center;
     background-color: lightyellow;
 }
+
+
+/*Grids for the center section layout 
+Should change with media queries 
+*/
 
 .sectionGridBox {
     display: grid;
@@ -44,22 +110,13 @@
 
 
 
-*{
-    border: 0px;
-    padding: 0px;
-    margin: 2px;
-    /*color: whitesmoke;
-    background-color: lightsteelblue;*/
-}
 
 
 
-
-
+/* -------------------------------------------- Main Page components --------------------------------------------------*/
 
 
 header {
-    
     grid-area: header;
 
 } 
@@ -80,10 +137,11 @@ aside {
     grid-area: MessegeCenter;  
 }
 
-nav {
-    /*background-color : rgba(245, 222, 179, 0.24);*/
+.masterNav{
+     /*background-color : rgba(245, 222, 179, 0.24);*/
+    text-align: center;
     grid-area: nav;
-} 
+}
 
 
 Footer {
@@ -93,6 +151,12 @@ Footer {
     text-justify: auto;
     background-color: lightyellow;
 }
+
+
+
+
+
+/* ---------------------------------------------- Inner Box Section --------------------------------------*/
 
 
 .innerbox{
@@ -109,34 +173,35 @@ Footer {
 }
 
 
-.masterNav{
-    text-align: center;
-}
 
-
-
-
-#menu{
+/* ---------------------------------------------- heading Section --------------------------------------*/
+#menuIcon{
+    grid-area:"menuIcon";
     text-align: center;
     font-size: 40px;
     margin: auto;
+    
 }
 
-#logo
-{
+
+#logo{
+    grid-area:"logo";
     margin: auto;
 }
 
-#mainheading{
+#mainHeading{
+    grid-area:"mainHeading";
     margin: auto;
 }
 
 #login{
+    grid-area:"login";
     text-align: center;
     margin: auto;
 }
 
 #signup{
+    grid-area:"signup";
     text-align: center;
     margin: auto;
 }
